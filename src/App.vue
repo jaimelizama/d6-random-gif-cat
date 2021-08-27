@@ -20,7 +20,7 @@
             </div>
           </div>
           <div class="form-filter mt-2">
-            <div class="row d-flex">
+            <div class="row">
               <div class="col-6 text-right pr-0">
                 <label>Filtro:</label>
               </div>
@@ -54,7 +54,7 @@
               </div>
               <div class="col-4 text-right pr-0">
                 <div
-                  class="ml-2 circle"
+                  class="circle"
                   :style="{
                     background:
                       formColor === formColor ? formColor : 'transparent'
@@ -71,6 +71,8 @@
               <div class="col-6 text-left pl-0">
                 <input
                   type="number"
+                  max="1000"
+                  step="10"
                   v-model.number="formSize"
                   required
                   placeholder="Ingrese un tamaño"
@@ -80,7 +82,7 @@
           </div>
         </div>
 
-        <button class="mt-2" type="submit">Obtener mi gatito</button>
+        <button class="mt-3" type="submit">Obtener mi gatito</button>
       </form>
       <!-- Revisar si está leyendo los datos ingresados -->
       <!-- {{ formTitle }} {{ formFilter }} {{ formColor }} {{ formSize }} -->
