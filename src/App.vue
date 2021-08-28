@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <h2 class="my-4">Random Gif Cat</h2>
+
     <div>
       <form @submit.prevent="searchMyCat">
         <div class="form-options py-2">
@@ -42,7 +43,7 @@
               <div class="col-6 text-right pr-0">
                 <label>Color:</label>
               </div>
-              <div class="col-2 text-left pl-0">
+              <div class="col-1 text-left pl-0">
                 <select v-model="formColor" required>
                   <option disabled selected value="">Elige un color</option>
                   <option value="white">Blanco</option>
@@ -52,7 +53,7 @@
                   <option value="green">Verde</option>
                 </select>
               </div>
-              <div class="col-4 text-right pr-0">
+              <div class="col-5 text-right pr-0">
                 <div
                   class="circle"
                   :style="{
